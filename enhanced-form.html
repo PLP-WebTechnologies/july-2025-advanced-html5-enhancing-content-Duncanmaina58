@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhanced HTML5 Content & Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    header, main, footer {
+      margin-bottom: 2em;
+    }
+
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+
+    fieldset {
+      margin-bottom: 1em;
+      border: 1px solid #ccc;
+      padding: 1em;
+    }
+
+    legend {
+      font-weight: bold;
+    }
+
+    label {
+      display: block;
+      margin-top: 0.5em;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to My Enhanced HTML5 Page</h1>
+    <p>This page demonstrates advanced HTML5 content and form creation with semantic structure and native validation.</p>
+  </header>
+
+  <main>
+    <!-- Lists -->
+    <section>
+      <h2>Top 3 Web Development Languages</h2>
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ol>
+
+      <h3>Frontend Development Tools</h3>
+      <ul>
+        <li>VS Code</li>
+        <li>Git & GitHub</li>
+        <li>Chrome DevTools</li>
+      </ul>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <h2>Course Schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Subject</th>
+            <th>Duration</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>HTML & CSS</td>
+            <td>2 hours</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>JavaScript</td>
+            <td>3 hours</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Projects & Review</td>
+            <td>2 hours</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media -->
+    <section>
+      <h2>Sample Media</h2>
+      <img src="https://via.placeholder.com/600x200" alt="Sample Banner Image" />
+      <audio controls>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <video controls width="600">
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+    </section>
+
+    <!-- HTML5 Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Personal Information</legend>
+          
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required minlength="3" placeholder="Your full name" />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required placeholder="example@email.com" />
+
+          <label for="dob">Date of Birth:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label for="gender">Gender:</label>
+          <select id="gender" name="gender" required>
+            <option value="">--Select Gender--</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select>
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required minlength="4" pattern="[A-Za-z0-9]+" placeholder="Alphanumeric only" />
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" placeholder="At least 6 characters" />
+
+          <label for="confirm-password">Confirm Password:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required minlength="6" />
+
+          <label>
+            <input type="checkbox" name="terms" required /> I agree to the terms and conditions
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Info</legend>
+
+          <label for="bio">Short Bio:</label>
+          <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..." maxlength="300"></textarea>
+
+          <label for="website">Website (optional):</label>
+          <input type="url" id="website" name="website" placeholder="https://example.com" />
+
+          <label for="referral">Referral Code:</label>
+          <input type="text" id="referral" name="referral" readonly value="PLP2025" />
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; @dun My Enhanced HTML Page. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
